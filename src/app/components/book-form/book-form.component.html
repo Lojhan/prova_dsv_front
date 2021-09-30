@@ -1,0 +1,13 @@
+<div>
+    <form [formGroup]="form" (ngSubmit)="onSubmit()">
+        <input placeholder="title" formControlName="title" type="text" required> 
+        <input placeholder="author" formControlName="author" type="text" required />
+        <input placeholder="description" formControlName="description" type="text" required> 
+        <input placeholder="year" formControlName="year" type="number" required />
+
+        <button type="button" type="submit" [disabled]="!form.valid">Adicionar Livro</button>
+        
+    </form>
+
+
+</div>
